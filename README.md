@@ -1,4 +1,5 @@
-# 💬 Agentic AI-Powered Excel Chatbot
+# 📊 SheetReasoning Agent
+### *Agentic AI-Powered Data Analysis Engine*
 
 An intelligent, **Agentic Data Analyst** that allows users to upload Excel or CSV files and interact with their data through natural language. This system doesn't just "chat"—it autonomously reasons over your data to generate precise Python logic for instant insights.
 
