@@ -43,7 +43,6 @@ body.dark-mode {
     height: 100vh;
 }
 
-/* Sidebar */
 .sidebar {
     width: 320px;
     padding: 2rem;
@@ -126,8 +125,6 @@ body.dark-mode .sidebar p {
     border: 1px solid #f5c6cb;
 }
 
-
-/* Theme Switcher */
 .theme-switcher {
     margin-top: auto;
     display: flex;
@@ -178,7 +175,7 @@ input:checked + .slider:before { transform: translateX(22px); }
     flex-direction: column;
     background-color: var(--light-chat-bg);
     transition: background-color 0.3s;
-    min-width: 0; /* Prevents flexbox from growing uncontrollably */
+    min-width: 0; 
 }
 
 body.dark-mode .chat-container {
@@ -239,7 +236,6 @@ body.dark-mode .user-message .message-content {
     background-color: var(--dark-user-bubble);
 }
 
-/* Typing indicator */
 .typing-indicator {
     display: flex;
     align-items: center;
@@ -261,7 +257,6 @@ body.dark-mode .user-message .message-content {
     40% { transform: scale(1.0); }
 }
 
-/* Chat Input Area */
 .chat-input-area {
     display: flex;
     padding: 1rem 2rem;
@@ -332,7 +327,6 @@ body.dark-mode #send-btn:disabled {
     background: #555;
 }
 
-/* Table styling for pandas dataframe output */
 .table-responsive {
     width: 100%;
     overflow-x: auto;
@@ -348,7 +342,7 @@ body.dark-mode #send-btn:disabled {
     color: var(--light-text);
     border-radius: 8px;
     overflow: hidden;
-    border-spacing: 0; /* THIS IS THE UI FIX */
+    border-spacing: 0; 
 }
 
 body.dark-mode .message-content table {
@@ -368,8 +362,8 @@ body.dark-mode .message-content th, body.dark-mode .message-content td {
 
 .message-content th {
     background-color: rgba(0,0,0,0.05);
-    position: sticky; /* THIS IS THE UI FIX */
-    top: 0;          /* THIS IS THE UI FIX */
+    position: sticky; 
+    top: 0;          
 }
 body.dark-mode .message-content th {
     background-color: rgba(255,255,255,0.05);
