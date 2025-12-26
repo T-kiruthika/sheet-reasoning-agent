@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const sendBtn = document.getElementById('send-btn');
     const themeToggle = document.getElementById('theme-toggle');
 
-    // --- Theme Switcher ---
     function setTeam(isDark) {
         if (isDark) {
             document.body.classList.add('dark-mode');
@@ -38,8 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-
-    // --- File Upload ---
     fileUploadInput.addEventListener('change', async function() {
         if (this.files.length === 0) return;
 
@@ -76,10 +73,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function setStatus(message, type) {
         uploadStatusDiv.textContent = message;
-        uploadStatusDiv.className = type; // 'success' or 'error'
+        uploadStatusDiv.className = type; 
     }
 
-    // --- Chat Functionality ---
     sendBtn.addEventListener('click', handleSendMessage);
     userInput.addEventListener('keydown', (event) => {
         if (event.key === 'Enter') {
@@ -125,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const messageContent = document.createElement('div');
         messageContent.classList.add('message-content');
-        messageContent.innerHTML = content; // Using innerHTML to render tables etc.
+        messageContent.innerHTML = content; 
         
         messageWrapper.appendChild(messageContent);
         chatBox.appendChild(messageWrapper);
