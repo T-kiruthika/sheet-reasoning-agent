@@ -53,6 +53,7 @@ When questions are analytical, the system generates **deterministic Python code*
 
 * This chatbot is designed for **lightweight, local AI-based data analysis**.
 * Due to limited system configuration, it currently uses **smaller AI models** — which are excellent for structured tasks but may reach limits with extreme reasoning-heavy queries.
+* **Security**: Currently intended for local, trusted datasets; uses a sandboxed environment for Python code execution.
 * While I’m not currently planning to upgrade this specific version, it remains a proud example of building a **functional AI application with limited resources**.
 
 ---
